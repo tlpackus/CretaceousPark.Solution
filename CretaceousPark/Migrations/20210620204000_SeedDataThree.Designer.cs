@@ -2,14 +2,16 @@
 using CretaceousPark.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CretaceousPark.Migrations
 {
     [DbContext(typeof(CretaceousParkContext))]
-    partial class CretaceousParkContextModelSnapshot : ModelSnapshot
+    [Migration("20210620204000_SeedDataThree")]
+    partial class SeedDataThree
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,7 +43,7 @@ namespace CretaceousPark.Migrations
                     b.HasData(
                         new
                         {
-                            AnimalId = 1,
+                            AnimalId = 7,
                             Age = 7,
                             Gender = "Female",
                             Name = "Matilda",
@@ -49,7 +51,7 @@ namespace CretaceousPark.Migrations
                         },
                         new
                         {
-                            AnimalId = 2,
+                            AnimalId = 8,
                             Age = 10,
                             Gender = "Female",
                             Name = "Rexie",
@@ -57,7 +59,7 @@ namespace CretaceousPark.Migrations
                         },
                         new
                         {
-                            AnimalId = 3,
+                            AnimalId = 9,
                             Age = 2,
                             Gender = "Female",
                             Name = "Matilda",
@@ -65,7 +67,7 @@ namespace CretaceousPark.Migrations
                         },
                         new
                         {
-                            AnimalId = 4,
+                            AnimalId = 10,
                             Age = 4,
                             Gender = "Male",
                             Name = "Pip",
@@ -73,7 +75,7 @@ namespace CretaceousPark.Migrations
                         },
                         new
                         {
-                            AnimalId = 5,
+                            AnimalId = 11,
                             Age = 22,
                             Gender = "Male",
                             Name = "Bartholomew",
